@@ -1,10 +1,11 @@
 // --- PREGUNTAS DE PRUEBA ---
 const preguntas = [
- {"texto": "El tamaño de un mercado objetivo puede gestionarlo por la distancia a la que la empresa es capaz de suministrar su producto o servicio.", "respuesta": true, 
-  "explicacion": ". El tamaño del mercado puede definirse según la capacidad logística o de distribución de la empresa."},
+    {"texto": "El tamaño de un mercado objetivo puede gestionarlo por la distancia a la que la empresa es capaz de suministrar su producto o servicio.", "respuesta": true, 
+     "explicacion": ". El tamaño del mercado puede definirse según la capacidad logística o de distribución de la empresa."},
     {"texto": "La misión de la empresa es el motivo principal de su existencia en la sociedad.", "respuesta": true, 
      "explicacion": ". La misión expresa la razón de ser de la empresa."},
-    {"texto": "El resultado en las empresas puede ser de beneficio o pérdidas.", "respuesta": true, "explicacion": ". El resultado contable puede ser positivo (beneficio) o negativo (pérdida)."},
+    {"texto": "El resultado en las empresas puede ser de beneficio o pérdidas.", "respuesta": true, 
+     "explicacion": ". El resultado contable puede ser positivo (beneficio) o negativo (pérdida)."},
     {"texto": "Fondo de Maniobra (FM) = Activo Corriente - Pasivo Corriente", "respuesta": true, 
      "explicacion": ". Es la fórmula del fondo de maniobra."},
     {"texto": "Activo no corriente es la adquisición de bienes y servicios destinados a facilitar la actividad empresarial con carácter inferior al año (o al ciclo de explotación).", "respuesta": false, 
@@ -47,7 +48,8 @@ const preguntas = [
      "explicacion": ". Indica la participación de la empresa en el mercado."},
     {"texto": "En la segmentación de mercados no se usan variables como el género, la edad, el estado civil y la dimensión de la unidad familiar por la dificultad de conseguir estos datos.", "respuesta": false, 
      "explicacion": ". Esas variables demográficas son básicas en la segmentación de mercados."},
-    {"texto": "Según Maslow, la primera necesidad a cubrir es la seguridad.", "respuesta": false, "explicacion": ". La primera son las necesidades fisiológicas; la seguridad es la segunda."},
+    {"texto": "Según Maslow, la primera necesidad a cubrir es la seguridad.", "respuesta": false, 
+     "explicacion": ". La primera son las necesidades fisiológicas; la seguridad es la segunda."},
     {"texto": "La propuesta de valor se define con 2 elementos: qué hacemos y cómo lo hacemos para crear valor al cliente.", "respuesta": true, 
      "explicacion": ". La propuesta de valor combina qué ofrecemos y cómo generamos valor."},
     {"texto": "El marketing MIX se refiere a las fuentes de información que nos posibilitan propuestas de mejora en el plan de empresa, la información la podemos obtener de clientes.", "respuesta": false, 
@@ -64,7 +66,8 @@ const preguntas = [
      "explicacion": ". Deudores son los clientes que aún no han pagado."},
     {"texto": "La crisis del COVID-19 ha frenado el turismo masivo de sol y playa. Si tengo un hotel en primera línea de mar y con la crisis busco clientes que quieran teletrabajar desde el hotel es una estrategia FO (utilizar una fortaleza para una oportunidad).", "respuesta": true, 
      "explicacion": ". Usa una fortaleza (ubicación) para aprovechar una oportunidad (teletrabajo)."},
-    {"texto": "En el análisis DAFO, la F significa Fabricación.", "respuesta": false, "explicacion": ". F significa Fortalezas."},
+    {"texto": "En el análisis DAFO, la F significa Fabricación.", "respuesta": false, 
+     "explicacion": ". F significa Fortalezas."},
     {"texto": "Según PORTER, son 5 las fuerzas que actúan sobre un sector para Renta. Aplicar un marketing estratégico táctico de especialización en un segmento.", "respuesta": true, 
      "explicacion": ". Porter propuso 5 fuerzas competitivas del sector."},
     {"texto": "Segmentar es diferenciar un producto de la competencia. Esto sucede cuando tenemos productos nuevos y los queremos vender en mercados existentes.", "respuesta": false, 
@@ -166,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
   i = 0;
   puntuacion = 0;
 
-  mostrarMensaje("🌻🌻🌻🌻 Bienvenida a la practica del parcial de COE del año pasado🌻🌻🌻🌻! 💬", "bot");
+  mostrarMensaje("🌻🌻🌻🌻 Bienvenida a la practica del parcial de COE del año pasado🌻🌻🌻🌻! ", "bot");
   setTimeout(() => {
     mostrarMensaje(preguntas[i].texto, "bot");
   }, 500);
@@ -174,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnV").onclick = () => responder(true);
   document.getElementById("btnF").onclick = () => responder(false);
 });
+
 
 
 
