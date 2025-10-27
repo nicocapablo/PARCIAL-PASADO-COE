@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
   i = 0;
   puntuacion = 0;
 
-  mostrarMensaje("🧠 Bienvenido a tu test de Verdadero/Falso. ¡Pulsa V o F para empezar! 💬", "bot");
+  mostrarMensaje("🌻🌻🌻🌻 Bienvenida a la practica del parcial de COE del año pasado🌻🌻🌻🌻! 💬", "bot");
   setTimeout(() => {
     mostrarMensaje(preguntas[i].texto, "bot");
   }, 500);
@@ -174,6 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnV").onclick = () => responder(true);
   document.getElementById("btnF").onclick = () => responder(false);
 });
+
 
 
 
